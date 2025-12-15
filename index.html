@@ -3,740 +3,907 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚀 HENOSIS 2K25 | THE ULTIMATE CYBERPUNK EXPERIENCE</title>
-    <meta name="description" content="Experience the most spectacular AI & Data Science fest in the universe - HENOSIS 2K25">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="HILARICAS 2025 - Annual Cultural Festival at H.I College of Arts & Science, Coimbatore. Register Free!">
+    <meta name="keywords" content="HILARICAS 2025, cultural festival, college fest, Coimbatore, events, competitions">
+    <meta name="author" content="H.I College of Arts & Science">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>HILARICAS 2025 | Infusing the Spirit of Youth</title>
 </head>
 <body>
-    <!-- ULTIMATE CYBERPUNK CURSOR SYSTEM -->
-    <div class="cursor-system">
-        <div class="cursor-glow" id="cursor-glow"></div>
-        <div class="cursor-trail" id="cursor-trail"></div>
-        <div class="cursor-particles" id="cursor-particles"></div>
-    </div>
 
-    <!-- MATRIX DIGITAL RAIN CANVAS -->
-    <canvas id="matrix-canvas" class="matrix-background"></canvas>
+    <!-- Reading Progress Bar -->
+    <div id="readingProgress" class="reading-progress"></div>
 
-    <!-- NEURAL NETWORK BACKGROUND -->
-    <canvas id="neural-canvas" class="neural-background"></canvas>
-
-    <!-- EPIC LOADING SCREEN -->
-    <div class="epic-loading" id="epic-loading">
-        <div class="loading-matrix">
-            <div class="loading-logo">
-                <h1 class="logo-glitch" data-text="HENOSIS 2K25">HENOSIS 2K25</h1>
-                <p class="loading-subtitle">INITIALIZING NEURAL INTERFACE...</p>
-            </div>
-            <div class="dna-helix">
-                <div class="helix-strand"></div>
-                <div class="helix-strand"></div>
-                <div class="helix-strand"></div>
-                <div class="helix-strand"></div>
-            </div>
-            <div class="progress-container">
-                <div class="progress-bar" id="progress-bar">
-                    <div class="progress-fill" id="progress-fill"></div>
-                    <div class="progress-glow"></div>
-                </div>
-                <div class="progress-text" id="progress-text">0%</div>
-            </div>
-            <div class="loading-stats">
-                <div class="stat-item">
-                    <span class="stat-label">NEURAL NODES</span>
-                    <span class="stat-value" data-target="2500">0</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">AI PROTOCOLS</span>
-                    <span class="stat-value" data-target="48">0</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">QUANTUM LINKS</span>
-                    <span class="stat-value" data-target="156">0</span>
-                </div>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-container">
+            <h1 class="loader">HILARICAS</h1>
+            <p class="loader-subtitle">Infusing the Spirit of Youth</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
             </div>
         </div>
     </div>
 
-    <!-- ULTIMATE NAVIGATION -->
-    <nav class="ultimate-nav" id="ultimate-nav">
+    <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <div class="logo-container">
-                    <h1 class="logo-main glitch-effect" data-text="HENOSIS">HENOSIS</h1>
-                    <span class="logo-year neon-text">2K25</span>
-                    <div class="logo-particles"></div>
-                </div>
+            <div class="logo">
+                HILARICAS
+                <span class="logo-subtitle">Infusing the Spirit of Youth</span>
             </div>
             
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#hero" class="nav-link cyber-link" data-text="HOME">
-                    <span class="link-icon"><i class="fas fa-home"></i></span>
-                    <span class="link-text">HOME</span>
-                    <div class="link-glow"></div>
-                </a></li>
-                <li><a href="#about" class="nav-link cyber-link" data-text="MISSION">
-                    <span class="link-icon"><i class="fas fa-rocket"></i></span>
-                    <span class="link-text">MISSION</span>
-                    <div class="link-glow"></div>
-                </a></li>
-                <li><a href="#events" class="nav-link cyber-link" data-text="EVENTS">
-                    <span class="link-icon"><i class="fas fa-brain"></i></span>
-                    <span class="link-text">EVENTS</span>
-                    <div class="link-glow"></div>
-                </a></li>
-                <li><a href="#speakers" class="nav-link cyber-link" data-text="MINDS">
-                    <span class="link-icon"><i class="fas fa-users"></i></span>
-                    <span class="link-text">MINDS</span>
-                    <div class="link-glow"></div>
-                </a></li>
-                <li><a href="#register" class="nav-link cta-link" data-text="ENTER">
-                    <span class="link-icon"><i class="fas fa-bolt"></i></span>
-                    <span class="link-text">ENTER MATRIX</span>
-                    <div class="link-energy"></div>
-                </a></li>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#register" class="register-free-btn nav-register">
+                        <span class="btn-shine"></span>
+                        <span class="btn-content">
+                            <span class="btn-text-top">Register</span>
+                            <span class="btn-text-main">FREE</span>
+                        </span>
+                    </a>
+                </li>
             </ul>
             
-            <div class="nav-controls">
-                <button class="control-btn audio-toggle" id="audio-toggle">
-                    <i class="fas fa-volume-up"></i>
-                    <div class="btn-ripple"></div>
-                </button>
-                <button class="control-btn theme-toggle" id="theme-toggle">
-                    <i class="fas fa-atom"></i>
-                    <div class="btn-ripple"></div>
-                </button>
-                <div class="hamburger" id="hamburger">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <div class="hamburger-glow"></div>
-                </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <main>
-        <!-- ULTIMATE HERO SECTION -->
-        <section id="hero" class="hero-ultimate">
-            <div class="hero-matrix">
-                <div class="floating-elements">
-                    <div class="float-element" data-speed="0.5"><i class="fas fa-brain"></i></div>
-                    <div class="float-element" data-speed="0.3"><i class="fas fa-network-wired"></i></div>
-                    <div class="float-element" data-speed="0.7"><i class="fas fa-atom"></i></div>
-                    <div class="float-element" data-speed="0.4"><i class="fas fa-robot"></i></div>
-                </div>
-            </div>
-            
-            <div class="hero-content">
-                <div class="hero-badge epic-badge">
-                    <span class="badge-icon">⚡</span>
-                    <span class="badge-text">NEURAL INTERFACE ACTIVATED</span>
-                    <div class="badge-pulse"></div>
-                </div>
-                
-                <h1 class="hero-title epic-title">
-                    <span class="title-line">WELCOME TO THE</span>
-                    <span class="title-main glitch-master" data-text="ULTIMATE">ULTIMATE</span>
-                    <span class="title-sub">AI & DATA SCIENCE REVOLUTION</span>
-                </h1>
-                
-                <p class="hero-description epic-description">
-                    Step into <span class="highlight-text">HENOSIS 2K25</span> - where reality meets 
-                    artificial intelligence in the most spectacular cyberpunk experience ever created. 
-                    Prepare for mind-blowing adventures in the digital realm!
-                </p>
-                
-                <!-- ULTIMATE 3D COUNTDOWN -->
-                <div class="countdown-ultimate" id="countdown-ultimate">
-                    <div class="countdown-title">NEURAL SYNC COUNTDOWN</div>
-                    <div class="countdown-display">
-                        <div class="count-cube">
-                            <div class="cube-container">
-                                <div class="cube-face front" id="days">00</div>
-                                <div class="cube-face back">00</div>
-                                <div class="cube-glow"></div>
-                            </div>
-                            <div class="cube-label">DAYS</div>
-                            <div class="cube-particles"></div>
-                        </div>
-                        <div class="count-separator">:</div>
-                        <div class="count-cube">
-                            <div class="cube-container">
-                                <div class="cube-face front" id="hours">00</div>
-                                <div class="cube-face back">00</div>
-                                <div class="cube-glow"></div>
-                            </div>
-                            <div class="cube-label">HOURS</div>
-                            <div class="cube-particles"></div>
-                        </div>
-                        <div class="count-separator">:</div>
-                        <div class="count-cube">
-                            <div class="cube-container">
-                                <div class="cube-face front" id="minutes">00</div>
-                                <div class="cube-face back">00</div>
-                                <div class="cube-glow"></div>
-                            </div>
-                            <div class="cube-label">MINS</div>
-                            <div class="cube-particles"></div>
-                        </div>
-                        <div class="count-separator">:</div>
-                        <div class="count-cube">
-                            <div class="cube-container">
-                                <div class="cube-face front" id="seconds">00</div>
-                                <div class="cube-face back">00</div>
-                                <div class="cube-glow"></div>
-                            </div>
-                            <div class="cube-label">SECS</div>
-                            <div class="cube-particles"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- ULTIMATE ACTION BUTTONS -->
-                <div class="hero-actions">
-                    <button class="ultimate-btn primary-ultimate" id="enter-matrix">
-                        <div class="btn-background"></div>
-                        <div class="btn-content">
-                            <i class="fas fa-rocket btn-icon"></i>
-                            <span class="btn-text">ENTER THE MATRIX</span>
-                        </div>
-                        <div class="btn-energy"></div>
-                        <div class="btn-particles"></div>
-                    </button>
-                    
-                    <button class="ultimate-btn secondary-ultimate" id="vr-experience">
-                        <div class="btn-background"></div>
-                        <div class="btn-content">
-                            <i class="fas fa-vr-cardboard btn-icon"></i>
-                            <span class="btn-text">VR EXPERIENCE</span>
-                        </div>
-                        <div class="btn-energy"></div>
-                        <div class="btn-particles"></div>
-                    </button>
-                </div>
-                
-                <!-- EPIC STATS -->
-                <div class="hero-stats epic-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-users"></i></div>
-                        <div class="stat-number animated-counter" data-target="5000">0</div>
-                        <div class="stat-label">NEURAL NODES</div>
-                        <div class="stat-glow"></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-brain"></i></div>
-                        <div class="stat-number animated-counter" data-target="72">0</div>
-                        <div class="stat-label">AI SESSIONS</div>
-                        <div class="stat-glow"></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
-                        <div class="stat-number animated-counter" data-target="96">0</div>
-                        <div class="stat-label">HOURS</div>
-                        <div class="stat-glow"></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-infinity"></i></div>
-                        <div class="stat-number">∞</div>
-                        <div class="stat-label">POSSIBILITIES</div>
-                        <div class="stat-glow"></div>
-                    </div>
-                </div>
-            </div>
-            
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Stars Background -->
+        <div id="stars" class="stars"></div>
         
-        </section>
-
-        <!-- ULTIMATE ABOUT SECTION -->
-        <section id="about" class="about-ultimate">
-            <div class="section-background">
-                <canvas id="particle-universe"></canvas>
-            </div>
-            
-            <div class="container">
-                <div class="section-header epic-header">
-                    <div class="section-badge cyber-badge">
-                        <span class="badge-text">MISSION PROTOCOL</span>
-                        <div class="badge-scanner"></div>
-                    </div>
-                    <h2 class="section-title ultimate-title">
-                        <span class="title-line">THE ULTIMATE</span>
-                        <span class="title-main glitch-master" data-text="EXPERIENCE">EXPERIENCE</span>
-                    </h2>
-                    <p class="section-subtitle">Dive deep into the neural networks of tomorrow</p>
-                </div>
-                
-                <div class="mission-grid ultimate-grid">
-                    <div class="mission-card ultimate-card" data-card="ai">
-                        <div class="card-glow-effect"></div>
-                        <div class="card-header">
-                            <div class="card-icon"><i class="fas fa-robot"></i></div>
-                            <div class="card-badge">CORE</div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">AI CONSCIOUSNESS</h3>
-                            <p class="card-description">
-                                Experience artificial consciousness through immersive neural interfaces 
-                                and quantum computing simulations that will blow your mind.
-                            </p>
-                            <div class="progress-system">
-                                <div class="progress-bar-card" data-progress="98">
-                                    <div class="progress-fill-card"></div>
-                                </div>
-                                <span class="progress-label">98% NEURAL SYNC</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mission-card ultimate-card" data-card="data">
-                        <div class="card-glow-effect"></div>
-                        <div class="card-header">
-                            <div class="card-icon"><i class="fas fa-dna"></i></div>
-                            <div class="card-badge">EVOLUTION</div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">DATA EVOLUTION</h3>
-                            <p class="card-description">
-                                Witness the evolution of data science through advanced algorithms 
-                                and machine learning paradigms that defy imagination.
-                            </p>
-                            <div class="progress-system">
-                                <div class="progress-bar-card" data-progress="95">
-                                    <div class="progress-fill-card"></div>
-                                </div>
-                                <span class="progress-label">95% DATA FUSION</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mission-card ultimate-card" data-card="quantum">
-                        <div class="card-glow-effect"></div>
-                        <div class="card-header">
-                            <div class="card-icon"><i class="fas fa-network-wired"></i></div>
-                            <div class="card-badge">NETWORK</div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">QUANTUM NETWORK</h3>
-                            <p class="card-description">
-                                Connect with brilliant minds across multiple dimensions of 
-                                artificial intelligence and quantum computing realms.
-                            </p>
-                            <div class="progress-system">
-                                <div class="progress-bar-card" data-progress="99">
-                                    <div class="progress-fill-card"></div>
-                                </div>
-                                <span class="progress-label">99% QUANTUM LINK</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ULTIMATE EVENTS SECTION -->
-        <section id="events" class="events-ultimate">
-            <div class="section-background">
-                <canvas id="cyber-grid"></canvas>
-            </div>
-            
-            <div class="container">
-                <div class="section-header epic-header">
-                    <div class="section-badge cyber-badge">
-                        <span class="badge-text">NEURAL EVENTS</span>
-                        <div class="badge-scanner"></div>
-                    </div>
-                    <h2 class="section-title ultimate-title">
-                        <span class="title-line">QUANTUM</span>
-                        <span class="title-main glitch-master" data-text="EXPERIENCES">EXPERIENCES</span>
-                    </h2>
-                    <p class="section-subtitle">Choose your path to digital enlightenment</p>
-                </div>
-                
-                <div class="events-container ultimate-events">
-                    <div class="event-card-3d ultimate-event" data-event="hackathon">
-                        <div class="card-3d-inner">
-                            <div class="card-face card-front">
-                                <div class="event-glow"></div>
-                                <div class="event-header">
-                                    <div class="event-icon"><i class="fas fa-brain"></i></div>
-                                    <div class="event-badge featured">FEATURED</div>
-                                </div>
-                                <div class="event-body">
-                                    <h3 class="event-title">AI NEURAL HACKATHON</h3>
-                                    <p class="event-description">48-hour neural interface coding marathon with mind-bending challenges</p>
-                                    <div class="event-stats">
-                                        <span class="stat-prize">₹3,00,000</span>
-                                        <span class="stat-duration">48 HOURS</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-face card-back">
-                                <div class="card-back-content">
-                                    <h4>NEURAL CHALLENGES</h4>
-                                    <ul class="challenge-list">
-                                        <li>• Brain-Computer Interfaces</li>
-                                        <li>• Quantum ML Algorithms</li>
-                                        <li>• Holographic Data Visualization</li>
-                                        <li>• AI Consciousness Models</li>
-                                    </ul>
-                                    <button class="ultimate-btn mini-btn">SYNC NOW</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="event-card-3d ultimate-event" data-event="vr">
-                        <div class="card-3d-inner">
-                            <div class="card-face card-front">
-                                <div class="event-glow"></div>
-                                <div class="event-header">
-                                    <div class="event-icon"><i class="fas fa-vr-cardboard"></i></div>
-                                    <div class="event-badge vr">VR</div>
-                                </div>
-                                <div class="event-body">
-                                    <h3 class="event-title">VR DATA UNIVERSE</h3>
-                                    <p class="event-description">Navigate through virtual data dimensions in spectacular VR</p>
-                                    <div class="event-stats">
-                                        <span class="stat-prize">₹2,00,000</span>
-                                        <span class="stat-duration">24 HOURS</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-face card-back">
-                                <div class="card-back-content">
-                                    <h4>VR ADVENTURES</h4>
-                                    <ul class="challenge-list">
-                                        <li>• Immersive Data Mining</li>
-                                        <li>• 3D Algorithm Racing</li>
-                                        <li>• Virtual Neural Networks</li>
-                                        <li>• Holodeck Programming</li>
-                                    </ul>
-                                    <button class="ultimate-btn mini-btn">ENTER VR</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="event-card-3d ultimate-event" data-event="quantum">
-                        <div class="card-3d-inner">
-                            <div class="card-face card-front">
-                                <div class="event-glow"></div>
-                                <div class="event-header">
-                                    <div class="event-icon"><i class="fas fa-atom"></i></div>
-                                    <div class="event-badge quantum">QUANTUM</div>
-                                </div>
-                                <div class="event-body">
-                                    <h3 class="event-title">QUANTUM ML LAB</h3>
-                                    <p class="event-description">Quantum machine learning experiments beyond imagination</p>
-                                    <div class="event-stats">
-                                        <span class="stat-prize">₹1,50,000</span>
-                                        <span class="stat-duration">16 HOURS</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-face card-back">
-                                <div class="card-back-content">
-                                    <h4>QUANTUM REALM</h4>
-                                    <ul class="challenge-list">
-                                        <li>• Qubits & Superposition</li>
-                                        <li>• Quantum Entanglement</li>
-                                        <li>• Parallel Universe AI</li>
-                                        <li>• Time-Space Algorithms</li>
-                                    </ul>
-                                    <button class="ultimate-btn mini-btn">QUANTUM SYNC</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ULTIMATE REGISTRATION SECTION -->
-        <section id="register" class="register-ultimate">
-            <div class="section-background">
-                <canvas id="neural-matrix"></canvas>
-            </div>
-            
-            <div class="container">
-                <div class="section-header epic-header">
-                    <div class="section-badge cyber-badge">
-                        <span class="badge-text">NEURAL INTERFACE</span>
-                        <div class="badge-scanner"></div>
-                    </div>
-                    <h2 class="section-title ultimate-title">
-                        <span class="title-line">ENTER THE</span>
-                        <span class="title-main glitch-master" data-text="MATRIX">MATRIX</span>
-                    </h2>
-                    <p class="section-subtitle">Initialize your neural connection to HENOSIS 2K25</p>
-                </div>
-                
-                <div class="register-container ultimate-register">
-                    <div class="form-container holographic-form">
-                        <div class="form-glow"></div>
-                        <div class="form-scanlines"></div>
-                        
-                        <form id="registrationForm" class="ultimate-form">
-                            <div class="form-header">
-                                <h3 class="form-title">NEURAL SYNC PROTOCOL</h3>
-                                <div class="sync-status">
-                                    <div class="status-indicator">
-                                        <div class="indicator-dot"></div>
-                                        <span>READY FOR SYNC</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-grid">
-                                <div class="input-group">
-                                    <label class="input-label">NEURAL IDENTITY</label>
-                                    <div class="input-container">
-                                        <input type="text" name="name" class="ultimate-input" placeholder="Enter your neural ID..." required>
-                                        <div class="input-glow"></div>
-                                        <div class="input-particles"></div>
-                                    </div>
-                                    <span class="error-message" id="nameError"></span>
-                                </div>
-                                
-                                <div class="input-group">
-                                    <label class="input-label">QUANTUM EMAIL</label>
-                                    <div class="input-container">
-                                        <input type="email" name="email" class="ultimate-input" placeholder="quantum@neural.net..." required>
-                                        <div class="input-glow"></div>
-                                        <div class="input-particles"></div>
-                                    </div>
-                                    <span class="error-message" id="emailError"></span>
-                                </div>
-                                
-                                <div class="input-group">
-                                    <label class="input-label">NEURAL FREQUENCY</label>
-                                    <div class="input-container">
-                                        <input type="tel" name="phone" class="ultimate-input" placeholder="+91 XXXXXXXXXX..." required>
-                                        <div class="input-glow"></div>
-                                        <div class="input-particles"></div>
-                                    </div>
-                                    <span class="error-message" id="phoneError"></span>
-                                </div>
-                                
-                                <div class="input-group">
-                                    <label class="input-label">INSTITUTION CODE</label>
-                                    <div class="input-container">
-                                        <input type="text" name="college" class="ultimate-input" placeholder="Your quantum institution..." required>
-                                        <div class="input-glow"></div>
-                                        <div class="input-particles"></div>
-                                    </div>
-                                    <span class="error-message" id="collegeError"></span>
-                                </div>
-                                
-                                <div class="input-group full-width">
-                                    <label class="input-label">PRIMARY NEURAL PATH</label>
-                                    <div class="select-container">
-                                        <select name="event" class="ultimate-select" required>
-                                            <option value="">Select your dimension...</option>
-                                            <option value="ai-hackathon">AI Neural Hackathon</option>
-                                            <option value="vr-universe">VR Data Universe</option>
-                                            <option value="quantum-lab">Quantum ML Lab</option>
-                                            <option value="all-events">All Quantum Experiences</option>
-                                        </select>
-                                        <div class="select-glow"></div>
-                                        <div class="select-arrow">▼</div>
-                                    </div>
-                                    <span class="error-message" id="eventError"></span>
-                                </div>
-                            </div>
-                            
-                            <div class="form-actions">
-                                <button type="submit" class="ultimate-btn submit-ultimate" id="submitBtn">
-                                    <div class="btn-background"></div>
-                                    <div class="btn-content">
-                                        <i class="fas fa-bolt btn-icon"></i>
-                                        <span class="btn-text">INITIALIZE NEURAL LINK</span>
-                                    </div>
-                                    <div class="btn-energy"></div>
-                                    <div class="btn-loader" id="btnLoader">
-                                        <div class="loader-ring"></div>
-                                    </div>
-                                </button>
-                            </div>
-                            
-                            <div class="security-info">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Quantum encrypted & neural secured</span>
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <div class="status-panel ultimate-panel">
-                        <div class="panel-header">
-                            <h3>NEURAL NETWORK STATUS</h3>
-                            <div class="status-badge online">ONLINE</div>
-                        </div>
-                        
-                        <div class="live-stats">
-                            <div class="stat-row">
-                                <div class="stat-icon"><i class="fas fa-users"></i></div>
-                                <div class="stat-info">
-                                    <span class="stat-number" id="live-registrations">3247</span>
-                                    <span class="stat-label">NEURAL NODES</span>
-                                </div>
-                                <div class="stat-bar">
-                                    <div class="bar-fill" style="width: 65%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="stat-row">
-                                <div class="stat-icon"><i class="fas fa-globe"></i></div>
-                                <div class="stat-info">
-                                    <span class="stat-number">187</span>
-                                    <span class="stat-label">DIMENSIONS</span>
-                                </div>
-                                <div class="stat-bar">
-                                    <div class="bar-fill" style="width: 93%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="stat-row">
-                                <div class="stat-icon"><i class="fas fa-bolt"></i></div>
-                                <div class="stat-info">
-                                    <span class="stat-number">99.8%</span>
-                                    <span class="stat-label">SYNC RATE</span>
-                                </div>
-                                <div class="stat-bar">
-                                    <div class="bar-fill" style="width: 99.8%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="neural-activity">
-                            <h4>NEURAL ACTIVITY</h4>
-                            <canvas id="activity-graph" width="300" height="120"></canvas>
-                        </div>
-                        
-                    </div>
-                </div>
-                <button type="submit" class="ultimate-btn submit-ultimate" id="submitBtn">
-    <div class="btn-background"></div>
-    <div class="btn-content">
-        <i class="fas fa-bolt btn-icon"></i>
-        <span class="btn-text">INITIALIZE NEURAL LINK</span>
-    </div>
-    <div class="btn-energy"></div>
-    <div class="btn-loader" id="btnLoader" style="display: none;">
-        <div class="loader-ring"></div>
-    </div>
-</button>
-
-                
-                <div class="form-message" id="formMessage"></div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ULTIMATE FOOTER -->
-    <footer class="ultimate-footer">
-        <div class="footer-background">
-            <div class="footer-grid"></div>
-            <div class="footer-particles"></div>
+        <!-- Floating Elements -->
+        <div class="hero-bg-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
         </div>
         
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section main-section">
-                    <div class="footer-logo">
-                        <h3 class="logo-footer glitch-effect" data-text="HENOSIS 2K25">HENOSIS 2K25</h3>
-                        <p class="logo-subtitle">AI & Data Science Department</p>
-                        <div class="neural-signature">
-                            <div class="signature-line"></div>
-                            <span>Neural Interface Activated</span>
-                        </div>
+        <!-- Particles -->
+        <div id="particles" class="particles"></div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                Annual Cultural Festival
+            </div>
+            
+            <h1 class="hero-title">HILARICAS</h1>
+            <h2 class="hero-subtitle">The Grand Cultural Extravaganza</h2>
+            <p class="hero-tagline">Infusing the Spirit of Youth</p>
+            
+            <!-- Hero Info Cards -->
+            <div class="hero-info">
+                <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="info-icon">📅</span>
+                    <div class="info-text">
+                        <span class="info-label">Date</span>
+                        <span class="info-value">February 14, 2025</span>
                     </div>
-                    <p class="footer-description">
-                        Empowering the next generation of AI innovators and data scientists 
-                        through mind-blowing experiences in the digital realm.
-                    </p>
                 </div>
                 
-                <div class="footer-section">
-                    <h4 class="section-title">QUANTUM LINKS</h4>
-                    <ul class="footer-links">
-                        <li><a href="#about">Mission Protocol</a></li>
-                        <li><a href="#events">Neural Events</a></li>
-                        <li><a href="#speakers">AI Minds</a></li>
-                        <li><a href="#register">Enter Matrix</a></li>
+                <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="info-icon">⏰</span>
+                    <div class="info-text">
+                        <span class="info-label">Time</span>
+                        <span class="info-value">9:30 AM Onwards</span>
+                    </div>
+                </div>
+                
+                <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+                    <span class="info-icon">📍</span>
+                    <div class="info-text">
+                        <span class="info-label">Venue</span>
+                        <span class="info-value">H.I College Campus</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="#register" class="cta-btn cta-primary">
+                    <span class="btn-glow"></span>
+                    <span style="position: relative; z-index: 1;">Register Now</span>
+                </a>
+                <a href="#events" class="cta-btn cta-secondary">
+                    View Events
+                </a>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 2px;">Scroll Down</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" data-aos="fade-up">
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="stat-icon">🎭</span>
+                <div class="stat-number" data-count="30">0</div>
+                <div class="stat-label">Events</div>
+                <div class="stat-description">On-Stage & Off-Stage</div>
+            </div>
+            
+            <div class="stat-box">
+                <span class="stat-icon">🏆</span>
+                <div class="stat-number" data-count="100000">0</div>
+                <div class="stat-label">Prize Pool</div>
+                <div class="stat-description">Worth in Cash Prizes</div>
+            </div>
+            
+            <div class="stat-box">
+                <span class="stat-icon">👥</span>
+                <div class="stat-number" data-count="2000">0</div>
+                <div class="stat-label">Participants</div>
+                <div class="stat-description">Expected Footfall</div>
+            </div>
+            
+            <div class="stat-box">
+                <span class="stat-icon">🎪</span>
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">Colleges</div>
+                <div class="stat-description">Across Tamil Nadu</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">About Us</span>
+            <h2 class="section-title">The Festival</h2>
+            <p class="section-subtitle">Where talent meets opportunity, and creativity knows no bounds</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <div class="about-highlight">
+                    <h3>Experience the Magic of HILARICAS 2025</h3>
+                    <div class="highlight-line"></div>
+                </div>
+                
+                <p>
+                    <strong>HILARICAS 2025</strong> is the flagship annual cultural festival organized by H.I College of Arts & Science, Coimbatore. 
+                    A grand celebration of talent, creativity, and youthful exuberance that brings together students from across Tamil Nadu.
+                </p>
+                
+                <p>
+                    With over <strong>30 competitive events</strong> spanning music, dance, drama, fine arts, literary arts, and digital media, 
+                    HILARICAS offers a platform for students to showcase their exceptional talents and compete for glory.
+                </p>
+                
+                <p>
+                    Join us for a day filled with electrifying performances, fierce competition, cultural diversity, and unforgettable memories. 
+                    This is where future stars are born and legends are made.
+                </p>
+                
+                <div class="about-stats">
+                    <div class="mini-stat">
+                        <div class="mini-stat-number">1</div>
+                        <div class="mini-stat-label">Day</div>
+                    </div>
+                    <div class="mini-stat">
+                        <div class="mini-stat-number">30+</div>
+                        <div class="mini-stat-label">Events</div>
+                    </div>
+                    <div class="mini-stat">
+                        <div class="mini-stat-number">₹1L+</div>
+                        <div class="mini-stat-label">Prizes</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-features" data-aos="fade-left">
+                <div class="feature-card">
+                    <span class="feature-icon">🎤</span>
+                    <h4>On-Stage Events</h4>
+                    <p>Witness spectacular live performances in music, dance, drama, and more on our grand stage.</p>
+                    <ul class="feature-list">
+                        <li>Solo & Group Performances</li>
+                        <li>Live Band & DJ Sessions</li>
+                        <li>Fashion Shows & Skits</li>
+                        <li>Stand-up Comedy</li>
                     </ul>
                 </div>
                 
-                <div class="footer-section">
-                    <h4 class="section-title">NEURAL NETWORK</h4>
-                    <div class="social-matrix">
-                        <a href="#" class="social-node"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-node"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-node"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-node"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-node"><i class="fab fa-youtube"></i></a>
+                <div class="feature-card">
+                    <span class="feature-icon">🎨</span>
+                    <h4>Off-Stage Events</h4>
+                    <p>Participate in creative competitions that test your skills, intellect, and artistic prowess.</p>
+                    <ul class="feature-list">
+                        <li>Photography & Videography</li>
+                        <li>Fine Arts & Crafts</li>
+                        <li>Literary Competitions</li>
+                        <li>Digital Design Contests</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h4>Why HILARICAS?</h4>
+                    <p>Experience a world-class cultural festival with professional organization and exciting rewards.</p>
+                    <ul class="feature-list">
+                        <li>Attractive Cash Prizes</li>
+                        <li>Certificates for All Participants</li>
+                        <li>Professional Judging Panel</li>
+                        <li>State-of-the-Art Facilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- College Info -->
+        <div class="college-info" data-aos="fade-up">
+            <div class="college-logo-section">
+                <div class="college-badge">
+                    <span class="badge-icon">🏛️</span>
+                    <div class="badge-content">
+                        <h4>Organized By</h4>
+                        <h3>H.I College of Arts & Science</h3>
+                        <p>Coimbatore, Tamil Nadu</p>
+                        <p class="college-location">📍 Near Jayalakshmi Puram, Palagakkadu Post, Sulur Road</p>
                     </div>
-                    
-                    <div class="contact-matrix">
-                        <div class="contact-row">
-                            <i class="fas fa-satellite-dish"></i>
-                            <span>henosis@neural.ai</span>
-                        </div>
-                        <div class="contact-row">
-                            <i class="fas fa-broadcast-tower"></i>
-                            <span>+91 QUANTUM FREQ</span>
-                        </div>
+                </div>
+                
+                <div class="college-legacy">
+                    <span class="legacy-badge">Excellence in Education Since Years</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section" id="events">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Competitions</span>
+            <h2 class="section-title">Our Events</h2>
+            <p class="section-subtitle">Choose your battlefield and showcase your extraordinary talent</p>
+        </div>
+        
+        <!-- Event Tabs -->
+        <div class="event-tabs" data-aos="fade-up">
+            <button class="tab-btn active" data-category="all">All Events</button>
+            <button class="tab-btn" data-category="music">Music</button>
+            <button class="tab-btn" data-category="dance">Dance</button>
+            <button class="tab-btn" data-category="arts">Fine Arts</button>
+            <button class="tab-btn" data-category="literary">Literary</button>
+            <button class="tab-btn" data-category="digital">Digital</button>
+        </div>
+        
+        <!-- Events Grid -->
+        <div class="events-grid">
+            
+            <!-- Event Card 1: Solo Singing -->
+            <div class="event-card" data-category="music" data-aos="fade-up">
+                <span class="event-badge">On-Stage</span>
+                
+                <div class="event-header">
+                    <span class="event-icon">🎤</span>
+                    <span class="event-code">E01</span>
+                </div>
+                
+                <h3>Solo Singing</h3>
+                <p class="event-description">
+                    Showcase your vocal prowess in this solo singing competition. Any genre, any language - let your voice mesmerize the audience.
+                </p>
+                
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-icon">👤</span>
+                        <span class="detail-text">Solo</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">⏱️</span>
+                        <span class="detail-text">4-6 mins</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">💰</span>
+                        <span class="detail-text">₹5,000</span>
+                    </div>
+                </div>
+                
+                <div class="event-rules">
+                    <h5>Quick Rules</h5>
+                    <ul>
+                        <li>Time limit: 4-6 minutes</li>
+                        <li>Any language permitted</li>
+                        <li>Use of karaoke track allowed</li>
+                        <li>Props & instruments welcome</li>
+                    </ul>
+                </div>
+                
+                <div class="event-prizes">
+                    <div class="prize-card gold">
+                        <span class="prize-medal">🥇</span>
+                        <div class="prize-amount">₹3,000</div>
+                        <div class="prize-label">First Prize</div>
+                    </div>
+                    <div class="prize-card silver">
+                        <span class="prize-medal">🥈</span>
+                        <div class="prize-amount">₹2,000</div>
+                        <div class="prize-label">Second Prize</div>
+                    </div>
+                    <div class="prize-card bronze">
+                        <span class="prize-medal">🥉</span>
+                        <div class="prize-amount">₹1,000</div>
+                        <div class="prize-label">Third Prize</div>
+                    </div>
+                </div>
+                
+                <p class="special-note">✨ Certificates for all participants</p>
+            </div>
+
+            <!-- Event Card 2: Group Dance -->
+            <div class="event-card" data-category="dance" data-aos="fade-up" data-aos-delay="100">
+                <span class="event-badge">On-Stage</span>
+                
+                <div class="event-header">
+                    <span class="event-icon">💃</span>
+                    <span class="event-code">E02</span>
+                </div>
+                
+                <h3>Group Dance</h3>
+                <p class="event-description">
+                    Bring your dance crew and set the stage on fire with synchronized moves, creative choreography, and energetic performances.
+                </p>
+                
+                <div class="event-details">
+                    <div class="detail-item">
+                        <span class="detail-icon">👥</span>
+                        <span class="detail-text">6-12 Members</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">⏱️</span>
+                        <span class="detail-text">5-8 mins</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">💰</span>
+                        <span class="detail-text">₹8,000</span>
+                    </div>
+                </div>
+                
+                <div class="event-rules">
+                    <h5>Quick Rules</h5>
+                    <ul>
+                        <li>Team size: 6-12 members</li>
+                        <li>Performance duration: 5-8 minutes</li>
+                        <li>Any dance form allowed</li>
+                        <li>Props and costumes permitted</li>
+                    </ul>
+                </div>
+                
+                <div class="event-prizes">
+                    <div class="prize-card gold">
+                        <span class="prize-medal">🥇</span>
+                        <div class="prize-amount">₹5,000</div>
+                        <div class="prize-label">First Prize</div>
+                    </div>
+                    <div class="prize-card silver">
+                        <span class="prize-medal">🥈</span>
+                        <div class="prize-amount">₹2,000</div>
+                        <div class="prize-label">Second Prize</div>
+                    </div>
+                    <div class="prize-card bronze">
+                        <span class="prize-medal">🥉</span>
+                        <div class="prize-amount">₹1,000</div>
+                        <div class="prize-label">Third Prize</div>
+                    </div>
+                </div>
+                
+                <p class="special-note">🎵 Participants must submit their music track in advance</p>
+            </div>
+
+            <!-- Event Card 3: Photography -->
+            <div class="event-card compact" data-category="digital" data-aos="fade-up" data-aos-delay="200">
+                <span class="event-badge">Off-Stage</span>
+                
+                <div class="event-header">
+                    <span class="event-icon">📷</span>
+                    <span class="event-code">E03</span>
+                </div>
+                
+                <h3>Photography Contest</h3>
+                <p class="event-description">
+                    Capture moments, tell stories through your lens. Theme-based photography competition for both amateur and professional photographers.
+                </p>
+                
+                <div class="event-meta">
+                    <span>👤 Solo</span>
+                    <span>📸 3 Submissions Max</span>
+                    <span>💰 ₹4,000 Prize Pool</span>
+                </div>
+                
+                <div class="event-prizes-compact">
+                    <span>🥇 ₹2,500</span>
+                    <span>🥈 ₹1,000</span>
+                    <span>🥉 ₹500</span>
+                </div>
+                
+                <p class="event-note">Theme will be announced on the event day</p>
+            </div>
+
+            <!-- Event Card 4: Fashion Show -->
+            <div class="event-card compact" data-category="dance" data-aos="fade-up">
+                <span class="event-badge">On-Stage</span>
+                
+                <div class="event-header">
+                    <span class="event-icon">👗</span>
+                    <span class="event-code">E04</span>
+                </div>
+                
+                <h3>Fashion Show</h3>
+                <p class="event-description">
+                    Walk the ramp with style, grace, and confidence. Showcase your modeling skills and fashion sense.
+                </p>
+                
+                <div class="event-meta">
+                    <span>👥 5-10 Members</span>
+                    <span>⏱️ 6-10 mins</span>
+                    <span>💰 ₹6,000 Prize Pool</span>
+                </div>
+                
+                <div class="event-prizes-compact">
+                    <span>🥇 ₹4,000</span>
+                    <span>🥈 ₹1,500</span>
+                    <span>🥉 ₹500</span>
+                </div>
+                
+                <p class="event-note">Theme-based costume design required</p>
+            </div>
+
+            <!-- Event Card 5: Short Film -->
+            <div class="event-card compact" data-category="digital" data-aos="fade-up" data-aos-delay="100">
+                <span class="event-badge">Off-Stage</span>
+                
+                <div class="event-header">
+                    <span class="event-icon">🎬</span>
+                    <span class="event-code">E05</span>
+                </div>
+                
+                <h3>Short Film Making</h3>
+                <p class="event-description">
+                    Create a compelling short film that tells a powerful story. Unleash your directorial vision and cinematographic skills.
+                </p>
+                
+                <div class="event-meta">
+                    <span>👥 3-8 Members</span>
+                    <span>⏱️ 5-10 mins</span>
+                    <span>💰 ₹10,000 Prize Pool</span>
+                </div>
+                
+                <div class="event-prizes-compact">
+                    <span>🥇 ₹6,000</span>
+                    <span>🥈 ₹2,500</span>
+                    <span>🥉 ₹1,500</span>
+                </div>
+                
+                <p class="event-note">Submit films 2 days before the event</p>
+            </div>
+
+            <!-- Event Card 6: Painting -->
+            <div class="event-card compact" data-category="arts" data-aos="fade-up" data-aos-delay="200">
+                <span class="event-badge">Off-Stage</span>
+                
+                <div class="event-header">
+                    <span class="event-icon">🎨</span>
+                    <span class="event-code">E06</span>
+                </div>
+                
+                <h3>Painting Competition</h3>
+                <p class="event-description">
+                    Express your creativity on canvas. Theme-based painting competition for all art enthusiasts.
+                </p>
+                
+                <div class="event-meta">
+                    <span>👤 Solo</span>
+                    <span>⏱️ 2 hours</span>
+                    <span>💰 ₹3,500 Prize Pool</span>
+                </div>
+                
+                <div class="event-prizes-compact">
+                    <span>🥇 ₹2,000</span>
+                    <span>🥈 ₹1,000</span>
+                    <span>🥉 ₹500</span>
+                </div>
+                
+                <p class="event-note">Materials will be provided on spot</p>
+            </div>
+
+        </div>
+        
+        <div style="text-align: center; margin-top: 4rem;" data-aos="fade-up">
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                And many more exciting events to explore!
+            </p>
+            <a href="#register" class="register-free-btn">
+                <span class="btn-shine"></span>
+                <span class="btn-content">
+                    <span class="btn-text-top">Register</span>
+                    <span class="btn-text-main">FREE</span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section" id="schedule">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Timeline</span>
+            <h2 class="section-title">Event Schedule</h2>
+            <p class="section-subtitle">A perfectly orchestrated day of cultural brilliance</p>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <div class="timeline-time">08:30 AM</div>
+                    <h4 class="timeline-title">Registration & Check-in</h4>
+                    <p>Participants arrive and complete registration process. Collect event kits and participant badges.</p>
+                    <ul class="timeline-checklist">
+                        <li>✓ Registration desk opens</li>
+                        <li>✓ ID verification</li>
+                        <li>✓ Event kit distribution</li>
+                        <li>✓ Venue familiarization</li>
+                    </ul>
+                </div>
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <div class="timeline-time">09:30 AM</div>
+                    <h4 class="timeline-title">Inauguration Ceremony</h4>
+                    <p>Grand opening ceremony with chief guest, cultural performances, and event launch.</p>
+                    <div class="ceremony-highlights">
+                        <span>Welcome Address</span>
+                        <span>Lamp Lighting</span>
+                        <span>Cultural Performance</span>
+                        <span>Vote of Thanks</span>
+                    </div>
+                </div>
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <div class="timeline-time">10:30 AM</div>
+                    <h4 class="timeline-title">Morning Events Begin</h4>
+                    <p>On-stage and off-stage competitions commence simultaneously across multiple venues.</p>
+                    <ul class="timeline-events">
+                        <li><span class="event-time">10:30 AM</span> Solo Singing</li>
+                        <li><span class="event-time">10:30 AM</span> Painting Competition</li>
+                        <li><span class="event-time">11:00 AM</span> Group Dance</li>
+                        <li><span class="event-time">11:30 AM</span> Photography Contest</li>
+                    </ul>
+                </div>
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <div class="timeline-time">01:00 PM</div>
+                    <h4 class="timeline-title">Lunch Break</h4>
+                    <p>Refreshments and lunch for all participants, volunteers, and guests.</p>
+                </div>
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 5 -->
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <div class="timeline-time">02:00 PM</div>
+                    <h4 class="timeline-title">Afternoon Session</h4>
+                    <p>Continuation of competitions and special guest performances.</p>
+                    <ul class="timeline-events">
+                        <li><span class="event-time">02:00 PM</span> Fashion Show</li>
+                        <li><span class="event-time">02:30 PM</span> Short Film Screening</li>
+                        <li><span class="event-time">03:00 PM</span> Drama Competition</li>
+                        <li><span class="event-time">03:30 PM</span> Guest Performance</li>
+                    </ul>
+                </div>
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 6 -->
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <div class="timeline-time">05:00 PM</div>
+                    <h4 class="timeline-title">Prize Distribution</h4>
+                    <p>Grand ceremony to honor winners and participants with prizes, certificates, and trophies.</p>
+                    <div class="ceremony-highlights">
+                        <span>Winner Announcement</span>
+                        <span>Trophy Distribution</span>
+                        <span>Photo Session</span>
+                        <span>Closing Remarks</span>
+                    </div>
+                </div>
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section class="rules-section" id="rules">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Guidelines</span>
+            <h2 class="section-title">Rules & Regulations</h2>
+            <p class="section-subtitle">Please read carefully before registering</p>
+        </div>
+        
+        <div class="rules-container">
+            <div class="rules-grid">
+                
+                <div class="rule-card" data-aos="fade-up">
+                    <span class="rule-number">01</span>
+                    <span class="rule-icon">📝</span>
+                    <h4>Registration</h4>
+                    <p>Register online through our official website. Walk-in registrations accepted subject to availability. College ID mandatory for verification.</p>
+                </div>
+                
+                <div class="rule-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="rule-number">02</span>
+                    <span class="rule-icon">👥</span>
+                    <h4>Participation</h4>
+                    <p>Participants can register for multiple events. Teams must register all members in advance. Inter-college teams are not allowed.</p>
+                </div>
+                
+                <div class="rule-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="rule-number">03</span>
+                    <span class="rule-icon">⏰</span>
+                    <h4>Timing</h4>
+                    <p>Participants must report 30 minutes before their scheduled event. Late arrivals may result in disqualification. Adhere to time limits strictly.</p>
+                </div>
+                
+                <div class="rule-card" data-aos="fade-up">
+                    <span class="rule-number">04</span>
+                    <span class="rule-icon">⚖️</span>
+                    <h4>Judging</h4>
+                    <p>Judges' decisions are final and binding. Evaluation based on creativity, skill, presentation, and adherence to rules. No disputes entertained.</p>
+                </div>
+                
+                <div class="rule-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="rule-number">05</span>
+                    <span class="rule-icon">🎯</span>
+                    <h4>Conduct</h4>
+                    <p>Maintain discipline and sportsmanship. No obscene content, offensive language, or inappropriate behavior. Respect all participants and organizers.</p>
+                </div>
+                
+                <div class="rule-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="rule-number">06</span>
+                    <span class="rule-icon">🏆</span>
+                    <h4>Prizes</h4>
+                    <p>Cash prizes and certificates for winners. Participation certificates for all. Prize distribution on the same day during closing ceremony.</p>
+                </div>
+                
+            </div>
+            
+            <div class="important-notice" data-aos="fade-up">
+                <span class="notice-icon">⚠️</span>
+                <div class="notice-content">
+                    <h3>Important Notice</h3>
+                    <ul>
+                        <li>Bring valid college ID card for verification</li>
+                        <li>Organizers reserve the right to modify rules if necessary</li>
+                        <li>Participants are responsible for their belongings</li>
+                        <li>Food and accommodation not provided by organizers</li>
+                        <li>Medical assistance will be available on campus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration CTA Section -->
+    <section class="register-section" id="register">
+        <div class="register-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="register-content" data-aos="fade-up">
+            <div class="register-badge">
+                <div class="pulse-ring"></div>
+                <span class="badge-text">Limited Slots</span>
+            </div>
+            
+            <h2>Ready to Shine?</h2>
+            <p class="register-tagline">Register now and be part of the grandest cultural festival</p>
+            
+            <div class="register-features">
+                <div class="feature-chip">
+                    <span class="chip-icon">✓</span>
+                    <span>Free Registration</span>
+                </div>
+                <div class="feature-chip">
+                    <span class="chip-icon">✓</span>
+                    <span>Attractive Prizes</span>
+                </div>
+                <div class="feature-chip">
+                    <span class="chip-icon">✓</span>
+                    <span>Certificates for All</span>
+                </div>
+            </div>
+            
+            <div class="register-cta">
+                <a href="https://forms.google.com/hilaricas2025" target="_blank" class="register-btn">
+                    <span class="btn-shine"></span>
+                    <span class="btn-text">Register Now</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <p class="register-deadline">Last Date: February 10, 2025</p>
+            </div>
+            
+            <div class="register-contact">
+                <div class="contact-card">
+                    <span class="contact-icon">📧</span>
+                    <div class="contact-info">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">hilaricas@hicas.ac.in</span>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <span class="contact-icon">📞</span>
+                    <div class="contact-info">
+                        <span class="contact-label">Contact</span>
+                        <span class="contact-value">96550 67740</span>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <span class="contact-icon">📱</span>
+                    <div class="contact-info">
+                        <span class="contact-label">WhatsApp</span>
+                        <span class="contact-value">84896 77333</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-about-section">
+                <div class="footer-logo">HILARICAS</div>
+                <p class="footer-tagline">Infusing the Spirit of Youth</p>
+                <p class="footer-about">
+                    HILARICAS is the annual cultural festival of H.I College of Arts & Science, bringing together 
+                    talent, creativity, and youthful energy in a spectacular celebration of culture and arts.
+                </p>
+                
+                <div class="footer-legacy">
+                    <span class="legacy-icon">🏛️</span>
+                    <div class="legacy-text">
+                        <strong>Hindusthan College of Arts & Science</strong>
+                        <span>Excellence in Education</span>
                     </div>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <span>&copy; 2025 HENOSIS 2K25 | Neural Rights Reserved</span>
+            <div class="footer-links-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-events-section">
+                <h4>Event Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#events">Music</a></li>
+                    <li><a href="#events">Dance</a></li>
+                    <li><a href="#events">Fine Arts</a></li>
+                    <li><a href="#events">Literary</a></li>
+                    <li><a href="#events">Digital Media</a></li>
+                    <li><a href="#events">Drama & Theatre</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact-section">
+                <h4>Contact Us</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <span class="contact-icon-footer">📧</span>
+                        <span>hilaricas@hicas.ac.in</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon-footer">📞</span>
+                        <span>96550 67740 | 84896 77333</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon-footer">📍</span>
+                        <span>H.I.C.A.S,<br>Near Jayalakshmi Puram, Palagakkadu Post,<br>Sulur Road, Coimbatore - 641402</span>
+                    </li>
+                </ul>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div class="footer-stats">
-                    <span class="stat">UPTIME: 99.99%</span>
-                    <span class="stat">NEURAL SYNC: ACTIVE</span>
-                    <span class="stat">QUANTUM: STABLE</span>
-                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 HILARICAS. All Rights Reserved.</p>
+                <p class="footer-motto">Infusing the Spirit of Youth</p>
+                <p class="footer-credit">Designed with ❤️ for H.I.C.A.S</p>
             </div>
         </div>
     </footer>
 
-    <!-- VR MODAL -->
-    <div class="vr-modal ultimate-modal" id="vr-modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>VR EXPERIENCE LOADING...</h3>
-                <button class="close-modal" id="close-vr">&times;</button>
-            </div>
-            <div class="vr-container">
-                <div class="vr-loading" id="vr-loading">
-                    <div class="vr-spinner">
-                        <div class="spinner-ring"></div>
-                        <div class="spinner-ring"></div>
-                        <div class="spinner-ring"></div>
-                    </div>
-                    <p>Initializing Virtual Reality Interface...</p>
-                </div>
-                <div class="vr-content" id="vr-content" style="display: none;">
-                    <h3>🥽 VR EXPERIENCE ACTIVATED</h3>
-                    <p>Welcome to the HENOSIS 2K25 virtual dimension!</p>
-                    <div class="vr-controls">
-                        <button class="vr-btn">Explore Campus</button>
-                        <button class="vr-btn">Visit AI Labs</button>
-                        <button class="vr-btn">Meet Neural Professors</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Scroll to Top Button -->
+    <div id="scrollTop" class="scroll-top">
+        <span class="scroll-icon">↑</span>
+        <svg class="scroll-progress" width="60" height="60">
+            <circle cx="30" cy="30" r="28" fill="none" stroke="rgba(13, 13, 13, 0.3)" stroke-width="2"/>
+        </svg>
     </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
 
     <script src="script.js"></script>
 </body>
 </html>
+
