@@ -1,4 +1,4 @@
-//* ===================================
+/* ===================================
    HILARICAS 2025 - Simple & Fast JS
    Optimized for Speed & Smooth Performance
    =================================== */
@@ -564,3 +564,4 @@ window.HILARICAS = {
 // End of Simple Fast JS
 // ===================================
 console.log('%c🚀 All systems ready!', 'color: #00ff00; font-size: 13px; font-weight: bold;');
+
