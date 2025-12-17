@@ -1,6 +1,6 @@
 # HILARICAS
 
-**HILARICAS** is a high-impact, modern event website designed to represent **Coimbatore’s largest and most energetic event experience**. Built with pure **HTML, CSS, and JavaScript**, this project focuses on bold visuals, smooth interactions, and a premium event vibe that brings the energy of the festival to life.  [oai_citation:1‡GitHub](https://github.com/pariksith/HILARICAS)
+**HILARICAS** is a high-impact, modern event website designed to represent **Coimbatore’s largest and most energetic event experience**. Built with pure **HTML, CSS, and JavaScript**, this project focuses on bold visuals, smooth interactions, and a premium event vibe that brings the energy of the festival to life. 
 
 ---
 
