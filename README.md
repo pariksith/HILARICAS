@@ -28,7 +28,7 @@
 
 ## 📖 About
 
-HILARICAS is a sleek, interactive event landing page that showcases a large-scale event with emphasis on visual appeal and user engagement. The design adopts a **Black Titanium aesthetic** and provides a seamless browsing experience to explore event details, schedule highlights, and multimedia elements.  [oai_citation:2‡GitHub](https://github.com/pariksith/HILARICAS)
+HILARICAS is a sleek, interactive event landing page that showcases a large-scale event with emphasis on visual appeal and user engagement. The design adopts a **Black Titanium aesthetic** and provides a seamless browsing experience to explore event details, schedule highlights, and multimedia elements. 
 
 ---
 
